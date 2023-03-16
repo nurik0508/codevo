@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+@import './normalize.css';
+@import './header.css';
+@import './variables.css';
+
+
+html {
+  font-size: calc(100vw / 1440 * 10);
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 500 * 10);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: calc(100vw / 360 * 10);
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
